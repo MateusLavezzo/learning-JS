@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>labelo</title>
+</head>
+<style>
+    body {
+        background-color: rgb(0, 255, 30);
+    }
+    h1 {
+        color: blueviolet;
+        font: normal 50pt ariel
+        ;
+    }
+</style>
+<h1>labelo</h1>
+<body>
+    <h2>bem vindo a nossa barbearia</h2> 
+    <h2>veja fotos dos nossos cortes:</h2>
+    <h3>mullet:</h3>
+    <img src="https://imgs.search.brave.com/eELlC52iL8PrEDWfNC3V0DGVm2X8ovzQJZTEygnJiII/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTMw/NDQ2NzQ4Ny9waG90/by9tdWxsZXQuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVZI/NWV0NTNObmRpa3JB/WjQ0amlybzN2OFRh/dGM1N0htUElCZ29N/ZGtpcjQ9" alt="Mullet">
+    <h3>Fade mid:</h3>
+    <img src="https://imgs.search.brave.com/LQLuY_-m_Z4nR6z7DwtX24n6Xm4W127xIiizR4LYdkg/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zYWxh/b3ZpcnR1YWwub3Jn/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDIy/LzEwL2NvcnRlcy1t/aWQtZmFkZS03LTIu/anBn" alt="">
+    <script>
+        var nome = window.prompt('Qual seu nome?');
+        var horario = window.prompt('Agende seu horário?');
+
+        // Criação de elementos e manipulação do DOM
+        const mensagem1 = document.createElement('p');
+        mensagem1.textContent = `Olá, ${nome}!`;
+        document.body.appendChild(mensagem1);
+
+        const mensagem2 = document.createElement('p');
+        mensagem2.textContent = `Seu horário é ${horario}`;
+        document.body.appendChild(mensagem2);
+         
+        
+    </script>
+    
+</body>
+</html>
