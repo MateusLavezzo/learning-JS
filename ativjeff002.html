@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+  <style>
+    body {
+        background-color: rgb(111, 214, 111);
+    }
+    h1 {
+        font: normal 30pt arial;
+        color: brown;
+    }
+    p {
+        font: normal 20pt arial;
+        color: blue;
+    }
+    div {
+        font: normal 15pt arial;
+        color: rgba(127, 12, 235, 0.918);
+        margin: 20px;
+    }
+    input {
+        font: nomal 15pt arial;
+        width: 100pt;
+    }
+  </style>
+<body>
+    <h1>Calculadora</h1>
+    <p>Soma: </p>
+    <input type="number" name="" id="soma">
+    <input type="number" name="" id="soma2">
+    <input type="button" value="aperte" onclick="somar()">
+    <div id="res1">Resultado:</div>
+    <p>Subtração:</p>
+    <input type="number" name="" id="sub">
+    <input type="number" name="" id="sub2">
+    <input type="button" value="aperte" onclick="subtração()">
+    <div id="res2">Resultado:</div>
+    <p>Multiplicação:</p>
+    <input type="number" name="" id="mul">
+    <input type="number" name="" id="mul2">
+    <input type="button" value="aperte" onclick="multiplicação()">
+    <div id="res3">Resultado:</div>
+    <p>Divisão:</p>
+    <input type="number" name="" id="divi">
+    <input type="number" name="" id="divi2">
+    <input type="button" value="aperte" onclick="divisão()">
+    <div id="res4">Resultado:</div>
+
+    <script>
+        function somar() {
+            var soma = window.document.getElementById('soma')
+            var soma2 = window.document.getElementById('soma2')
+            var res1 = window.document.getElementById('res1')
+            var n1 = Number(soma.value)
+            var n2 = Number(soma2.value)
+            var a = n1 + n2 
+            res1.innerHTML = `é ${a}`
+        }
+
+        function subtração() {
+         var sub = window.document.getElementById('sub')
+         var sub2 = window.document.getElementById('sub2')
+         var res2 = window.document.getElementById('res2')
+         var n3 = Number(sub.value)
+         var n4 = Number(sub2.value)
+         var b = n3 - n4
+         res2.innerHTML = `é ${b}`
+        }
+
+        function multiplicação() {
+            var mul = window.document.getElementById('mul')
+            var mul2 = window.document.getElementById('mul2')
+            var res3 = window.document.getElementById('res3')
+            var n5 = Number(mul.value)
+            var n6 = Number(mul2.value)
+            var c = n5 * n6 
+            res3.innerText = `é ${c}`
+        }
+        
+        function divisão() {
+            var divi = window.document.getElementById('divi')
+            var divi2 = window.document.getElementById('divi2')
+            var res4 = window.document.getElementById('res4')
+            var n7 = Number(divi.value)
+            var n8 = Number(divi2.value)
+            var d = n7 / n8
+            res4.innerText = `é ${d}`
+        }
+
+        
+    </script>
+
+</body>
+</html>
