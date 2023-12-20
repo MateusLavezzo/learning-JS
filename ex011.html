@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Meu país!</h1>
+    Vivendo em: <input type="text" name="txp" id="txp">
+    <input type="button" value="Aperte" onclick="falar()">
+    <div id='res'></div>
+
+    <script> 
+        function falar() {
+            // Obter o valor do campo de entrada
+            var txp = window.document.getElementById('txp').value;
+            
+            // Obter a referência do elemento div onde a resposta será exibida
+            var res = window.document.querySelector("div#res");
+            
+            // Exibir a nacionalidade na div
+            res.innerHTML = `<p> Seu país é <strong>${txp}</strong> </p>`;
+            
+            // Verificar se a nacionalidade é 'Brasil' (ignorando maiúsculas/minúsculas)
+            if (txp.toLowerCase() === 'brasil') {
+                res.innerHTML += `Não é estrangeiro`;
+            } else {
+                res.innerHTML += `É estrangeiro`;
+            }
+        }
+    </script>
+</body>
+</html>
