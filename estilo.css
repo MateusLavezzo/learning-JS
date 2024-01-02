@@ -1,0 +1,24 @@
+body {
+    background: rgb(39, 118, 222);
+    font: normal 15pt arial;
+}
+
+header {
+    color: white;
+    text-align: center; /* para centralizar o texto */
+}
+
+section {
+    background: white;
+    border-radius: 10px; /* para a redondar as bordas */
+    padding: 15px; /* Em CSS, o termo "padding" refere-se ao espaço interno em torno do conteúdo de um elemento, dentro de suas bordas. O padding é utilizado para aumentar ou diminuir o espaço entre o conteúdo de um elemento e suas bordas. */
+    width: 500px; /* para limitar o tamanho dos pixel*/
+    margin: auto; /* para ficar no meio da tela, centralizar */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.413); /* para colocar uma sombra */
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
