@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebendo</title>
+</head>
+<body>
+    <h1>Qual é o maior?</h1>
+    <input type="number" name="" id="n1">
+    <input type="number" name="" id="n2">
+    <input type="number" name="" id="n3">
+    <input type="button" value="resultado" onclick="maior()">
+    <div id="res1">Resultado:</div>
+    <script>
+      function maior() {
+        var n1 = window.document.getElementById('n1')
+        var n2 = window.document.getElementById('n2')
+        var n3 = window.document.getElementById('n3')
+        var m1 = Number(n1.value)
+        var m2 = Number(n2.value)
+        var m3 = Number(n3.value)
+        if (m1 >= m2 && m1 >= m3) {
+            res1.innerHTML = `O maior é: ${m1}`;
+        } else if (m2 >= m1 && m2 >= m3) {
+            res1.innerHTML = `O maior é: ${m2}`;
+        } else {
+            res1.innerHTML = `O maior é: ${m3}`;
+        } }
+          
+    </script>
+</body>
+</html> 
+<!--  3. Receber 3 números e informar qual é o maior e o menor
+Faça um programa JavaScript que receba 3 números informados pelo usuário e em seguida apresente uma mensagem de alerta informando qual é o maior número dentre os números informados.
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript Exercício</title>
+    <script>
+      var numero01 = prompt("Informe o primeiro número", "100");
+      var numero02 = prompt("Informe o segundo número", "200");
+      var numero03 = prompt("Informe o terceiro número", "300");
+      if ((numero01 > numero02) && (numero01 > numero03)) mensagem = "O primeiro número informado é maior!"
+      else
+      if ((numero02 > numero01) && (numero02 > numero03)) mensagem = "O segundo número informado é maior!"
+      else
+      if ((numero03 > numero01) && (numero03 > numero02)) mensagem = "O terceiro número informado é maior!"
+      else
+      mensagem = "Os números são iguais ou nada foi informado";
+      alert(mensagem);
+    </script>
+  </head>
+  <body>
+    <h1>Exercício 03</h1>
+  </body>
+</html>  
+ -->
